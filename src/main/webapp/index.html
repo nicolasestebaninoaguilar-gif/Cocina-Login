@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cocina Login</title>
+</head>
+<body>
+
+    <h1>Simulador de Cocina</h1>
+    <h2>Servicio de Registro e Inicio de Sesión</h2>
+
+    <!-- Formulario para registrar un nuevo usuario -->
+    <h3>Registrar usuario</h3>
+
+    <form action="api/registro" method="post">
+
+        <label for="usuarioRegistro">Usuario:</label>
+        <input type="text" id="usuarioRegistro" name="usuario" required>
+
+        <br><br>
+
+        <label for="contrasenaRegistro">Contraseña:</label>
+        <input type="password" id="contrasenaRegistro" name="contrasena" required>
+
+        <br><br>
+
+        <button type="submit">Registrar</button>
+
+    </form>
+
+    <hr>
+
+    <!-- Formulario para iniciar sesión -->
+    <h3>Iniciar sesión</h3>
+
+    <form action="api/login" method="post">
+
+        <label for="usuarioLogin">Usuario:</label>
+        <input type="text" id="usuarioLogin" name="usuario" required>
+
+        <br><br>
+
+        <label for="contrasenaLogin">Contraseña:</label>
+        <input type="password" id="contrasenaLogin" name="contrasena" required>
+
+        <br><br>
+
+        <button type="submit">Iniciar sesión</button>
+
+    </form>
+
+</body>
+</html>
